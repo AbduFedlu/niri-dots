@@ -1,0 +1,119 @@
+@import "colors.css";
+
+
+#waybar {
+
+  padding: 0px 0px  
+}
+
+
+* {
+  font-size: 13px;
+  border-radius: 1rem;
+}
+window#waybar {
+    
+   background: rgba(20, 20, 25, 0.99);
+   color: @on_primary_container;
+
+}
+
+
+#niri-window,
+#custom-weather,
+#disk,
+#window,
+#temperature,
+#temperature.critical,
+#idle_inhibitor {
+	padding: 0 10px;
+        margin: 4px 1px 4px 1px;
+    
+}
+
+#clock
+ {
+
+      padding: 0 5px;
+      margin: 4px 10px 4px 2px; 
+
+
+}
+#cpu
+ {
+
+      padding: 0 5px;
+      margin: 4px 2px 4px 10px; 
+
+
+}
+ 
+#memory,
+#temperature {
+	padding: 0 5px;
+        margin: 4px 2px 4px 2px;
+	
+    
+}
+
+#network-speed {
+	padding: 0 5px;
+        margin: 4px 2px 4px 2px;
+	
+
+
+}
+ 
+#tray,
+#mpris { 
+        padding: 0 5px;
+        margin: 4px 4px 4px 2px;
+
+
+}
+
+
+
+#pulseaudio,
+#custom-pomodoro,
+#bluetooth,
+#battery, 
+#network,
+#custom-wlsunset {
+	padding: 0 5px;
+        margin: 4px 1px 4px 1px;
+
+
+}    
+
+
+
+#custom-sep {
+  font-size: 16px;
+  padding: 0px 2px;
+  color: #526577;
+  
+}
+
+
+#battery.critical:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+tooltip {
+  background: rgba(20, 20, 25, 1);
+  
+}
+
+
+
+#waybar .module:hover {
+    background: rgba(153, 153, 153, 0.2); /* Slightly transparent white background */
+   
+}

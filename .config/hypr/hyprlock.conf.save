@@ -1,0 +1,34 @@
+Monitor lock settings
+general {
+    disable_loading_bar = true
+    grace = 10
+}
+
+# Background layer
+background {
+    path = /path/to/your/wallpaper.png # Replace with your image
+    color = rgba(25, 20, 20, 1.0) # Fallback color
+    blur_passes = 3
+    blur_size = 5
+}
+
+# The password input
+input-field {
+    monitor =
+    size = 250, 60
+    outline_thickness = 3
+    dots_size = 0.33 # Scale of the dots
+    dots_spacing = 0.15 # How much space between dots
+    dots_center = true
+    inner_color = rgb(200, 200, 200)
+    outer_color = rgb(10, 10, 10)
+    shadow_color = rgb(0, 0, 0)
+    shadow_passes = 2
+    shadow_size = 8
+    fade_on_empty = true
+    placeholder_text = <span foreground="##ffffff">Input Password...</span>
+    font_color = rgb(10, 10, 10)
+    check_color = rgb(40, 40, 40)
+    fail_color = rgb(255, 0, 0)
+    fail_text = <span foreground="red">Login Failed!</span>
+}
