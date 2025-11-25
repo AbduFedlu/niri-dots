@@ -39,8 +39,4 @@ blueberry
 
 <img width="1920" height="1080" alt="Screenshot from 2025-11-26 01-36-25" src="https://github.com/user-attachments/assets/8f6fc621-8676-49e3-a80d-cbfe23bbdd2f" />
 
-
-
-
-
-
+<img width="1920" height="1080" alt="hyprlock-screenshot-20251126_014023" src="https://github.com/user-attachments/assets/9ac5c21d-c244-49fb-8a27-c60005dcbd9e" />
