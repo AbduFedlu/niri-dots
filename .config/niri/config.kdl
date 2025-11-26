@@ -724,16 +724,23 @@ Mod+Shift+M { spawn-sh "/home/abatu/Desktop/mpris-popup.sh"; }
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
     // Using spawn-sh allows to pass multiple arguments together with the command.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86MonBrightnessUp allow-when-locked=true { 
+        spawn "sh" "-c" "brightnessctl set 10%+ && notify-send -i \"none\" -h string:x-canonical-private-synchronous:brightness -h int:value:$(brightnessctl -m | awk -F, '{print $4}') \"\" \"\""; 
+    }
+    XF86MonBrightnessDown allow-when-locked=true { 
+        spawn "sh" "-c" "brightnessctl set 10%- && notify-send -i \"none\" -h string:x-canonical-private-synchronous:brightness -h int:value:$(brightnessctl -m | awk -F, '{print $4}') \"\" \"\""; 
+    }
 
-    // Example brightness key mappings for brightnessctl.
-    // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
-    // but you need to manually put each argument in separate "" quotes.
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { 
+        spawn "sh" "-c" "pamixer -i 5 && notify-send -i \"none\" -h string:x-canonical-private-synchronous:volume -h int:value:$(pamixer --get-volume) \"\" \"\""; 
+    }
+    XF86AudioLowerVolume allow-when-locked=true { 
+        spawn "sh" "-c" "pamixer -d 5 && notify-send -i \"none\" -h string:x-canonical-private-synchronous:volume -h int:value:$(pamixer --get-volume) \"\" \"\""; 
+    }
+    XF86AudioMute allow-when-locked=true { 
+        spawn "sh" "-c" "pamixer -t && notify-send -i \"none\" -h string:x-canonical-private-synchronous:volume \"\" \"\"";
+    }; 
+     
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
