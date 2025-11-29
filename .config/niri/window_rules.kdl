@@ -1,0 +1,206 @@
+
+//------------------------------ Window rule -----------------------
+
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
+
+// ---------------------------- Apps --------------------------
+
+// Workspace Study apps
+
+window-rule {
+    
+    match app-id="com.github.dahenson.agenda"
+    default-column-width { fixed 490; }
+    default-window-height { fixed 806; }
+    open-on-workspace "Study"
+    open-floating false
+
+}
+
+window-rule {
+
+    match app-id="org.gnome.Papers"
+    default-column-width { fixed 1504; }
+    default-window-height { fixed 806; }
+    open-on-workspace "Study"
+    open-floating false
+
+}
+
+window-rule {
+  
+    match app-id="FFPWA-01KAGY1FQG7HQQH0HSKSB22BSK"
+    default-column-width { fixed 490; }
+    default-window-height { fixed 806; }
+    open-on-workspace "Study"
+    open-floating false
+
+
+}
+
+// Music workspace 
+
+
+window-rule {
+   
+    match app-id="kew"
+    default-column-width { fixed 490; }
+    default-window-height { fixed 806; }
+    open-on-workspace "Music"
+    open-floating false
+
+}
+
+
+
+window-rule {
+    
+    match app-id="FFPWA-01KAKZFZM98Q3JG41B8VCC6PMH"
+    default-column-width { fixed 490; }
+    default-window-height { fixed 806; }
+    open-on-workspace "Study"
+    open-floating false
+
+}
+
+
+// Pomodoro workspace
+
+
+window-rule {
+   
+    match app-id=r#"org.gnome.Solanum$"# title="^Solanum$"
+    default-column-width { fixed 1504; }
+    default-window-height { fixed 806; }
+    open-on-workspace "Pomodoro"
+
+    open-floating false
+
+}
+
+
+
+// Unorganized
+
+
+window-rule {
+    // this app-id regular expression will work for both:
+    // - host firefox (app-id is "firefox")
+    // - flatpak firefox (app-id is "org.mozilla.firefox")
+    match app-id="mpv"
+    default-column-width { fixed 436; }
+    default-window-height { fixed 303; }
+    open-floating true 
+
+}
+
+window-rule {
+    // this app-id regular expression will work for both:
+    // - host firefox (app-id is "firefox")
+    // - flatpak firefox (app-id is "org.mozilla.firefox")
+    match app-id="com.github.hluk.copyq"
+    default-column-width { fixed 512; }
+    default-window-height { fixed 471; }
+
+    open-floating true
+
+}
+
+window-rule {
+    
+    match app-id="com.github.neithern.g4music" 
+    default-column-width { fixed 490; }
+    default-window-height { fixed 806; }
+
+    open-floating false
+
+}
+
+
+window-rule {
+    // this app-id regular expression will work for both:
+    // - host firefox (app-id is "firefox")
+    // - flatpak firefox (app-id is "org.mozilla.firefox")
+    match app-id="com.network.manager"
+    default-column-width { fixed 400; }
+    default-window-height { fixed 500; }
+
+    open-floating true
+    default-floating-position x=32 y=10 relative-to="top-right"
+
+}
+
+
+window-rule {
+    // this app-id regular expression will work for both:
+    // - host firefox (app-id is "firefox")
+    // - flatpak firefox (app-id is "org.mozilla.firefox")
+    match app-id="blueberry.py" 
+    default-column-width { fixed 400; }
+    default-window-height { fixed 500; }
+
+    open-floating true
+    default-floating-position x=140 y=10 relative-to="top-right"
+}
+
+window-rule {
+    // this app-id regular expression will work for both:
+    // - host firefox (app-id is "firefox")
+    // - flatpak firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"imv$"#
+    open-floating true
+    default-floating-position x=120 y=10 relative-to="top-left"
+
+}
+
+window-rule {
+    // this app-id regular expression will work for both:
+    // - host firefox (app-id is "firefox")
+    // - flatpak firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"anki$"# title="^add$"
+    default-column-width { fixed 600; }
+    default-window-height { fixed 600; }
+
+
+    open-floating true
+   
+}
+
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+    default-floating-position x=32 y=32 relative-to="bottom-right"
+  
+
+}
+
+// Example: block out two password managers from screen capture.
+// (This example rule is commented out with a "/-" in front.)
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+    block-out-from "screen-capture"
+
+    // Use this instead if you want them visible on third-party screenshot tools.
+    // block-out-from "screencast"
+}
+
+
+
+window-rule {
+    // This regular expression is intentionally made as specific as possible,
+    // since this is the default config, and we want no false positives.
+    // You can get away with just app-id="wezterm" if you want.
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+
