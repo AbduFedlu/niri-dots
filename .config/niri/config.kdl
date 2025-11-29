@@ -21,7 +21,6 @@ cursor {
 
 
 workspace "Study"
-workspace "Music"
 workspace "Pomodoro"
 
 // ---------------------------- Overview ----------------------------

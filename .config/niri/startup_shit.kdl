@@ -7,14 +7,13 @@ hotkey-overlay {
 //---------------------------- Apps ----------------------------
 
 
-spawn-at-startup "com.github.dahenson.agenda"
-spawn-at-startup "countdown"
-spawn-at-startup "com.github.dahenson.agenda"
 
 
 //---------------------------- Utils --------------------------
 
 spawn-at-startup "waybar"
+
+spawn-at-startup "wlsunset"
 
 spawn-at-startup "awww-daemon"
 
