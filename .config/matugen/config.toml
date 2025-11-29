@@ -71,3 +71,6 @@ input_path = '/home/abatu/.config/matugen/templates/spicetify.ini'
 output_path = '~/.config/spicetify/Themes/matugen/color.ini'
 post_hook = '/home/abatu/.config/matugen/scripts/spicetify_theme.sh'
 
+[templates.Obsidian]
+input_path = '/home/abatu/.config/matugen/templates/obsidian.css'
+output_path = '/home/abatu/Documents/Obsidian Vault/.obsidian/snippets/mytheme.css'
