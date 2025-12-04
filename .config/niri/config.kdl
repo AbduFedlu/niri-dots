@@ -37,7 +37,35 @@ overview {
 layer-rule {
     match namespace="^awww"
     place-within-backdrop true
+
 }
+
+layer-rule {
+    match namespace="^swaync"
+    place-within-backdrop false
+    block-out-from "screencast"
+
+
+}
+
+layer-rule {
+    match namespace="^vicinae"
+    place-within-backdrop false
+    block-out-from "screencast"
+    
+    shadow {
+        on
+        softness 40
+        spread 10
+
+
+    }
+
+
+
+}
+
+
 
 // ----------------------------   Input  ---------------------------- 
 
@@ -61,9 +89,16 @@ input {
     mouse {
         
     }
+   
+    touch {
+        // off
+        map-to-output "eDP-1"
+        // calibration-matrix 1.0 0.0 0.0 0.0 1.0 0.0
+    }
 
     
     focus-follows-mouse max-scroll-amount="20%"
+    warp-mouse-to-focus
 }
 
 // ---------------------------- Output ----------------------------
@@ -85,6 +120,19 @@ prefer-no-csd
 
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

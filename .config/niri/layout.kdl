@@ -33,5 +33,24 @@ layout {
     }
 
 
+    tab-indicator {
+        width 4
+        gap 4
+        length total-proportion=1.0
+        position "left"
+        corner-radius 8
+	active-color "#a8c7fa"
+
+
+        place-within-column
+    }
+
+
+
+
+    
+    always-center-single-column
+
+
 }
 

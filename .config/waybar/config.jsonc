@@ -14,9 +14,6 @@
 "modules-right":  ["tray","custom/sep","custom/wlsunset","battery","bluetooth","network","custom/sep","clock"],
 
 
-
-
-
 "bluetooth": {
   "format-on": " Not Connected",
   "format-off": "󰂲 Off",

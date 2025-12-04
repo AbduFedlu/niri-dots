@@ -6,7 +6,7 @@
 }
 window#waybar {
     
-   background: rgba(20, 20, 25, 0.99);
+   background: rgba(20, 20, 25, 0);
    color: @on_primary_container;
 
 }

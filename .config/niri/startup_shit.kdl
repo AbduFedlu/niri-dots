@@ -11,6 +11,8 @@ hotkey-overlay {
 
 //---------------------------- Utils --------------------------
 
+spawn-at-startup "com.github.dahenson.agenda"
+
 spawn-at-startup "waybar"
 
 spawn-at-startup "wlsunset"

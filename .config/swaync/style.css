@@ -1,6 +1,6 @@
 :root {
   --cc-bg: rgba(46, 46, 46, 1);
-  --noti-border-color: rgba(255, 255, 255, 0.4);
+  --noti-border-color: rgba(255, 255, 255, 1);
   --noti-bg: 20, 20, 25;
   --noti-bg-alpha: 0.7;
   --noti-bg-darker: rgb(38, 38, 38);
