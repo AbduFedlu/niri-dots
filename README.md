@@ -1,9 +1,9 @@
-<img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-22-27" src="https://github.com/user-attachments/assets/89320252-d846-43b0-9492-98cbe4da5c2a" /># Dotfiles
-:)
 
-**Backed up using stow**
+# :)
 
-Clone and run *stow --adopt .* in the Dotfiles dir
+## **Backed up using stow**
+
+### Clone and run *stow --adopt .* in the Dotfiles dir
 
 
 ## Packages 
@@ -29,6 +29,8 @@ nmgui
 blueberry
 
 ## Shots 
+
+<img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-22-27" src="https://github.com/user-attachments/assets/89320252-d846-43b0-9492-98cbe4da5c2a" /># Dotfiles
 
 <img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-20-45" src="https://github.com/user-attachments/assets/d68486c1-e457-4f3c-8e8c-5c04cc5efd6c" />
 
