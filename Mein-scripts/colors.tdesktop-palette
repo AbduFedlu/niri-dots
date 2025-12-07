@@ -4,8 +4,8 @@ COLOR_GRAY: #000000;
 COLOR_GRAY_LIGHT: #000000;                            
 COLOR_GRAY_DARK: #000000;                            
 
-COLOR_DARK: #0f1417;                            // Main color (dark one)
-COLOR_DARK_LIGHT: #141b1f;                            // Main color (dark one)
+COLOR_DARK: #111318;                            // Main color (dark one)
+COLOR_DARK_LIGHT: #15181e;                            // Main color (dark one)
 
 COLOR_GREEN_DARK: #000000;                      // Accent color
 COLOR_GREEN_DARK_HIGHLIGHTED: #000000;                      // Accent color
@@ -13,20 +13,20 @@ COLOR_GREEN_DARK_HIGHLIGHTED: #000000;                      // Accent color
 COLOR_GREEN_LIGHT: #000000;                      // 2 Accent color
 COLOR_GREEN_LIGHT_HIGHLIGHTED: #000000;                      // 2 Accent color
 
-COLOR_GREEN_RIPPLE_ACTIVE: #1e282e;                     
+COLOR_GREEN_RIPPLE_ACTIVE: #20232d;                     
 
-COLOR_SURFACE: #060809;
-COLOR_SURFACE_HIGHLIGHTED: #101519;
-COLOR_SURFACE_HIGHLIGHTED_MORE: #1c262b;
+COLOR_SURFACE: #060709;
+COLOR_SURFACE_HIGHLIGHTED: #111318;
+COLOR_SURFACE_HIGHLIGHTED_MORE: #1e212a;
 
-COLOR_WHITE: #dfe3e7;
+COLOR_WHITE: #e1e2e9;
 COLOR_BLACK: #000000;
 
 // basic
 windowBg: COLOR_DARK;                           // Window backgrounds
 windowFg: #e0e2e8;                          // Main text / chat text
-windowBgOver: #0a0d0f;                          // Search field background + buttons color in context men/windowu
-windowBgRipple: #141b1f;                        // Inactive chat in chats list (press & hold)
+windowBgOver: #0b0c0f;                          // Search field background + buttons color in context men/windowu
+windowBgRipple: #15181e;                        // Inactive chat in chats list (press & hold)
 windowFgOver: #9ecafc;                         // black: fallback for over text color
 windowSubTextFg: windowFg;                    // Chats list message preview text
 windowSubTextFgOver: #000000;                   // Mouse over chats list message preview text
@@ -344,7 +344,7 @@ msgInDateFgSelected: windowFg;         // Incoming selected message date text
 msgOutDateFg: windowFg;                       // Outgoing message date text
 msgOutDateFgSelected: COLOR_DARK_LIGHT;        // Outgoing selected message date text
 msgServiceFg: COLOR_WHITE;                      // Service messages text color (join, left etc)
-msgServiceBg: #0a0d0f;                          // Service messages BACKGROUND color (join, left etc) (adjusted)
+msgServiceBg: #0b0c0f;                          // Service messages BACKGROUND color (join, left etc) (adjusted)
 msgServiceBgSelected: #8ca0b3a2;                // Service message selected text background (like in a service message about group title being changed) (adjusted)
 msgInReplyBarColor:  #9ecafc;           // Incoming msg: vertical bar next to reply
 msgInReplyBarSelColor:  #9ecafc;        // Incoming msg: vertical bar next to reply (selected)
