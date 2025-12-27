@@ -1,3 +1,4 @@
+
 Niri Dotfiles
 
 A modular, Material-themed configuration for the Niri scrollable-tiling compositor.
@@ -5,35 +6,23 @@ A modular, Material-themed configuration for the Niri scrollable-tiling composit
 
 The following tools form the core of this setup:
 
-    Compositor: niri (Modular configuration)
+- Compositor: niri (Modular configuration)
 
-    Shell: fish (With starship prompt)
+- Shell: fish (With starship prompt)
 
-    Terminal: kitty
+- Terminal: kitty
 
-    Bar: waybar
+- Bar: waybar
 
-    Notifications: swaync
+- Notifications: swaync
 
-    Theming: matugen (Material Design generation), gtk-3.0/4.0, qt5ct/qt6ct
+- File Manager: Nautilus + Yazi 
 
-    File Manager: Nautilus + Yazi 
+- Editor: nvim
 
-    Editor: nvim
+- App Launcher: Vicinae
 
-    App Launcher: Vicinae
+- System Info: fastfetch, btop
 
-    System Info: fastfetch, btop
+- Utilities: hypridle, hyprlock, wlogout, spicetify, nmgui, blueberry bluetooth. 
 
-    Utilities: hypridle, hyprlock, wlogout, spicetify, nmgui, blueberry bluetooth. 
-
-🚀 Installation
-
-    Clone the repository:
-    Bash
-
-git clone https://github.com/AbduFedlu/niri-dots.git ~/Dotfiles
-
-Symlink configurations: Ensure the contents of .config/ are linked to ~/.config/.
-
-Theming: This setup uses Matugen to maintain a consistent color palette across GTK, Kitty, and Waybar.
