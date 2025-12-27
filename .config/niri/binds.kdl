@@ -1,6 +1,6 @@
 binds {
 
-
+    
     // ------------------------------- Waybar---------------------------------------
 
     Mod+H { spawn-sh "pgrep waybar && pkill waybar || setsid waybar"; }
@@ -17,7 +17,7 @@ binds {
     //---------------------------- App launchers ------------------------------------
     Mod+T { spawn "kitty"; }
     Mod+E repeat=true { spawn-sh "xdg-open ."; }
-    Mod+S { spawn "firefox"; }
+    Mod+S { spawn-sh "zen-browser"; }
 
 
     // --------------------------- Window Managment ----------------------------

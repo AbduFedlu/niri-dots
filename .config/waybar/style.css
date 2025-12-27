@@ -6,7 +6,7 @@
 }
 window#waybar {
     
-   background: rgba(20, 20, 25, 0);
+   background: rgba(20, 20, 25, 0.4);
    color: @on_primary_container;
 
 }
@@ -40,6 +40,7 @@ window#waybar {
 }
  
 #memory,
+#custom-powerprofiles,
 #temperature {
 	padding: 0 5px;
         margin: 4px 2px 4px 2px;
@@ -95,3 +96,5 @@ tooltip {
 #waybar .module:hover {
     background: rgba(153, 153, 153, 0.2);   
 }
+
+

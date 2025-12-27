@@ -8,14 +8,12 @@ hotkey-overlay {
 
 
 
-
 //---------------------------- Utils --------------------------
 
-spawn-at-startup "com.github.dahenson.agenda"
 
 spawn-at-startup "waybar"
 
-spawn-at-startup "wlsunset"
+//spawn-at-startup "wlsunset"
 
 spawn-at-startup "awww-daemon"
 
@@ -28,5 +26,5 @@ spawn-sh-at-startup "copyq --start-server"
 spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 
-//spawn-sh-at-startup "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
-//spawn-sh-at-startup "QT_QPA_PLATFORM,wayland;xcb"
+
+

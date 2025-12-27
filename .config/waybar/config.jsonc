@@ -95,7 +95,7 @@
 
 "tray": {
     "icon-size": 12,
-    "spacing": 6
+    "spacing": 8
 },
 
 
@@ -155,7 +155,7 @@
   "format-disconnected": "󰖪  No Connection",
   "format-disabled": "󰖪  Disabled",
   "tooltip": true,
-  "tooltip-format-wifi": "Speed : {icon} {bandwidthDownBytes} ",
+  "tooltip-format-wifi": "Down: {icon} {bandwidthDownBytes}\nUp:      {bandwidthUpBytes}",
   "tooltip-format-ethernet": "Speed go Vroom : {icon} {bandwidthDownBytes} ",
   "tooltip-format-disconnected": "",
 
@@ -214,7 +214,20 @@
   "max-length": 25,
   "padding": 5,
   "tooltip": false
-}
+},
 
+
+
+"custom/powerprofiles": {
+        "format": "{icon}",
+        "return-type": "json",
+        "format-icons": {
+            "performance": "󰓅   Pref",
+            "balanced": "󰾅   Bal",
+            "power-saver": "󰾆   Pow-save"
+        },
+        "exec": "waybar-powerprofiles",
+        "on-click": "waybar-powerprofiles -next"
+}
 
 }

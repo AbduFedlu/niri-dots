@@ -79,3 +79,11 @@ output_path = '/home/abatu/Documents/Obsidian Vault/.obsidian/snippets/mytheme.c
 input_path = '/home/abatu/.config/matugen/templates/Ayugram.tdesktop-theme'
 output_path = '/home/abatu/Mein-scripts/colors.tdesktop-palette'
 
+[templates.userChrome]
+input_path = '/home/abatu/.config/matugen/templates/userChrome.css.tpl'
+output_path = '/home/abatu/.zen/h19bdl74.Default (release)/chrome/userChrome.css'
+
+[templates.userContent]
+input_path = '/home/abatu/.config/matugen/templates/userContent.css.tpl'
+output_path = '/home/abatu/.zen/h19bdl74.Default (release)/chrome/userContent.css'
+post_hook = 'echo $HOME/.mozilla/Zen/*.default-release/chrome'
