@@ -1,41 +1,39 @@
+Niri Dotfiles
 
-# :)
+A modular, Material-themed configuration for the Niri scrollable-tiling compositor.
+🛠 Essential Packages
 
-# **Backed up using stow**
+The following tools form the core of this setup:
 
-# Packages 
+    Compositor: niri (Modular configuration)
 
-vicinae
-waybar 
-awww-git
-btop
-matugen
-fastfetch
-starship
-wlogout
-hypridle
-hyprlock
-swaync
-yazi
-nvim
-mpv 
-kew
-copyq
-nmgui
-blueberry
-pywalfox
+    Shell: fish (With starship prompt)
 
-# Shots 
+    Terminal: kitty
 
+    Bar: waybar
 
-<img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-53-21" src="https://github.com/user-attachments/assets/ceea393b-922d-45bc-b0ea-56fbdf49ebdd" />
+    Notifications: swaync
 
+    Theming: matugen (Material Design generation), gtk-3.0/4.0, qt5ct/qt6ct
 
-<img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-52-51" src="https://github.com/user-attachments/assets/50a180b8-466d-4984-b3c8-f0a6e06bbda8" />
+    File Manager: Nautilus + Yazi 
 
+    Editor: nvim
 
-<img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-56-13" src="https://github.com/user-attachments/assets/09b782af-b779-4d77-9cd0-bc3cf1758dcc" />
+    App Launcher: Vicinae
 
+    System Info: fastfetch, btop
 
-<img width="1920" height="1080" alt="Screenshot from 2025-12-05 18-22-03" src="https://github.com/user-attachments/assets/a9c82edf-7a72-4617-87f7-a3d3bda29ad9" />
+    Utilities: hypridle, hyprlock, wlogout, spicetify, nmgui, blueberry bluetooth. 
 
+🚀 Installation
+
+    Clone the repository:
+    Bash
+
+git clone https://github.com/AbduFedlu/niri-dots.git ~/Dotfiles
+
+Symlink configurations: Ensure the contents of .config/ are linked to ~/.config/.
+
+Theming: This setup uses Matugen to maintain a consistent color palette across GTK, Kitty, and Waybar.
