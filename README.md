@@ -1,38 +1,7 @@
+## Screenshot
 
-🛠 Essential Packages
+<img width="1920" height="1077" alt="Screenshot from 2026-01-28 17-37-58" src="https://github.com/user-attachments/assets/c472a206-7818-4360-b5b7-00aa0f9a071d" />
 
-The following tools form the core of this setup:
+<img width="1920" height="1080" alt="Screenshot from 2026-01-28 17-44-54" src="https://github.com/user-attachments/assets/4bc3a8d3-3460-453c-b592-9c309d4747c6" />
 
-- Compositor: niri (Modular configuration)
-
-- Shell: fish (With starship prompt)
-
-- Terminal: kitty
-
-- Bar: waybar
-
-- Notifications: swaync
-
-- File Manager: Nautilus + Yazi 
-
-- Editor: nvim
-
-- App Launcher: Vicinae
-
-- System Info: fastfetch, btop
-
-- Utilities: hypridle, hyprlock, wlogout, spicetify, nmgui, blueberry bluetooth. 
-
-## Screenshots
-
-<img width="1920" height="1080" alt="Screenshot from 2025-12-27 13-43-27" src="https://github.com/user-attachments/assets/6a1706a0-9bf2-4476-b8d1-e37c6b6a5d1d" />
-
-<img width="1920" height="1080" alt="Screenshot from 2025-12-27 13-42-55" src="https://github.com/user-attachments/assets/1aaf766e-021d-4e06-8be8-52397497280c" />
-
-<img width="1920" height="1080" alt="Screenshot from 2025-12-27 13-25-45" src="https://github.com/user-attachments/assets/6a55bb3d-3e82-4938-996e-5789720e5c5a" /> 
-
-<img width="1920" height="1080" alt="Screenshot from 2025-12-27 13-25-17" src="https://github.com/user-attachments/assets/54dfd126-f75c-4b0b-9b37-8f2fb42076da" />
-
-<img width="1920" height="1080" alt="Screenshot from 2025-12-27 13-41-25" src="https://github.com/user-attachments/assets/34f013bf-ea28-4890-99b1-904146bc1400" />
-
-
+<img width="1920" height="1080" alt="Screenshot from 2026-01-28 17-42-31" src="https://github.com/user-attachments/assets/91afd78c-57ff-4a03-a9d1-ad786c1edbc3" />
