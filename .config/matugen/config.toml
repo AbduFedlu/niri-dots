@@ -100,3 +100,7 @@ output_path = '~/.config/zathura/zathurarc'
 input_path = '/home/abatu/.config/matugen/templates/dunstrc-colors'
 output_path = '~/.config/dunst/dunstrc'
 post_hook = 'dunstctl reload'
+
+[templates.ytmusic]
+input_path = '~/.config/matugen/templates/ytmusic.pcss'
+output_path = '/home/abatu/.config/YouTube Music/theme/mein.css' # Adjust to your app's CSS location
