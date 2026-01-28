@@ -37,7 +37,7 @@ window-rule {
 
 window-rule {
    
-    match app-id="kew"
+    match app-id="com.github.th_ch.youtube_music"
     match app-id="org.gnome.Nautilus"
     match app-id="com.github.neithern.g4music"
     match app-id="dev.mufeed.Wordbook" 
