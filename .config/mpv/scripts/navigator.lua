@@ -23,19 +23,17 @@ local settings = {
   key_navback = "LEFT",
   key_navforward = "RIGHT",
   key_navopen = "ENTER",
-  key_navclose = "ESC",
+  key_navclose = "N",
   key_navpageup = "PGUP",
   key_navpagedown = "PGDWN",
 
   --fallback if no file is open, should be a string that points to a path in your system
-  defaultpath = windows_desktop or os.getenv("HOME") or "/",
-  forcedefault = false, --force navigation to start from defaultpath instead of currently playing file
+  defaultpath = "/home/abatu/Entertainment/Movies",
+  forcedefault = true, --force navigation to start from defaultpath instead of currently playing file
   --favorites in format { 'Path to directory, notice trailing /' }
   --on windows use double backslash c:\\my\\directory\\
   favorites = {
-    '/media/HDD2/music/music/',
-    '/media/HDD/users/anon/Downloads/',
-    '/home/anon/',
+    '/home/abatu/Entertainment/Movies',
   },
   --list of paths to ignore. the value is anything that returns true for if-statement.
   --directory ignore entries must end with a trailing slash,

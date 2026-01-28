@@ -21,10 +21,18 @@ spawn-sh-at-startup "vicinae server"
 
 spawn-sh-at-startup "hypridle"
 
-spawn-sh-at-startup "copyq --start-server"
+//spawn-sh-at-startup "copyq --start-server"
 
 spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
+//spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 
+//spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
 
+spawn-at-startup "niriusd"
 
+spawn-sh-at-startup "salatux daemon"
+
+spawn-at-startup "dunst"
+
+spawn-at-startup "/usr/lib/kdeconnectd"

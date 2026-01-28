@@ -87,3 +87,16 @@ output_path = '/home/abatu/.zen/h19bdl74.Default (release)/chrome/userChrome.css
 input_path = '/home/abatu/.config/matugen/templates/userContent.css.tpl'
 output_path = '/home/abatu/.zen/h19bdl74.Default (release)/chrome/userContent.css'
 post_hook = 'echo $HOME/.mozilla/Zen/*.default-release/chrome'
+
+[templates.hamr_colors]
+input_path = '~/.config/matugen/templates/hamr-colors.json'
+output_path = '~/.config/hamr/colors.json'
+
+[templates.zathura]
+input_path = '/home/abatu/.config/matugen/templates/zathura.colors'
+output_path = '~/.config/zathura/zathurarc'
+
+[templates.dunst]
+input_path = '/home/abatu/.config/matugen/templates/dunstrc-colors'
+output_path = '~/.config/dunst/dunstrc'
+post_hook = 'dunstctl reload'

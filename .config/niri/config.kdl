@@ -93,6 +93,7 @@ input {
 
     
     focus-follows-mouse max-scroll-amount="20%"
+    disable-power-key-handling true
 }
 
 // ---------------------------- Output ----------------------------
@@ -116,15 +117,11 @@ prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 
+debug {
 
+honor-xdg-activation-with-invalid-serial
 
-
-
-
-
-
-
-
+}
 
 
 

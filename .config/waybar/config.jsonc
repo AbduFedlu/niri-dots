@@ -1,4 +1,5 @@
 {
+    "on-click-right": "~/.config/waybar/scripts/power_daemon_advanced.sh 5 reset",
 "layer": "top",
 "position": "top",
 "height":10,
@@ -9,9 +10,20 @@
 
 
 
-"modules-left": ["cpu","memory","temperature","custom/sep","image#mpris-art","mpris"],
+"modules-left": ["cpu","memory","temperature","custom/power","custom/sep","image#mpris-art","mpris"],
 "modules-center": ["niri/window"],
-"modules-right":  ["tray","custom/sep","custom/wlsunset","battery","bluetooth","network","custom/sep","clock"],
+"modules-right":  ["tray","custom/sep","custom/kdeconnect","custom/wlsunset","battery","bluetooth","network","custom/sep","clock"],
+
+
+"custom/kdeconnect": {
+    "exec": "~/.config/waybar/scripts/kdeconnect.sh",
+    "return-type": "json",
+    "format": "{}",
+    "interval": 5, // Faster interval to see the toggle effect quickly
+    "on-click": "kdeconnect-app",
+    "on-click-right": "~/.config/waybar/scripts/kdeconnect.sh toggle",
+    "tooltip": true
+},
 
 
 "bluetooth": {
@@ -56,7 +68,7 @@
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 60,
     "format-critical": "{temperatureC}°C ",
-    "format": "{temperatureC}°C "
+    "format": " {temperatureC}°C"
 },
 
 
@@ -213,21 +225,18 @@
   "format": "{title}",
   "max-length": 25,
   "padding": 5,
-  "tooltip": false
+  "tooltip": true 
 },
 
 
 
-"custom/powerprofiles": {
-        "format": "{icon}",
-        "return-type": "json",
-        "format-icons": {
-            "performance": "󰓅   Pref",
-            "balanced": "󰾅   Bal",
-            "power-saver": "󰾆   Pow-save"
-        },
-        "exec": "waybar-powerprofiles",
-        "on-click": "waybar-powerprofiles -next"
+"custom/power": {
+    "exec": "~/.config/waybar/scripts/power_daemon_advanced.sh 5",
+    "return-type": "json",
+    "interval": 3,
+    "on-click": "python3 ~/.config/waybar/scripts/power_profile_gui.py",
+    "tooltip": false, 
+    "format": "{}"
 }
 
 }

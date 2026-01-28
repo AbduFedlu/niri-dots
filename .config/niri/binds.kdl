@@ -1,5 +1,6 @@
 binds {
 
+
     
     // ------------------------------- Waybar---------------------------------------
 
@@ -7,12 +8,15 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
  
     // ------------------------------- Utils ----------------------------------
-    Mod+V {spawn-sh "copyq toggle";}
+    
+    Mod+V repeat=false {spawn-sh "vicinae vicinae://extensions/vicinae/clipboard/history";}
     Mod+D { spawn-sh "vicinae toggle"; }
-    Mod+Shift+L  { spawn-sh "wlogout --buttons-per-row=6"; }
+    Mod+Shift+L  { spawn-sh "nwg-bar"; }
+    Mod+Shift+O  { spawn-sh "vicinae vicinae://extensions/sovereign/awww-switcher/wpgrid"; }
+    Mod+Shift+A repeat=false  { spawn-sh "planify.quick-add"; }
 
 
-
+//wlogout --buttons-per-row=6"
 
     //---------------------------- App launchers ------------------------------------
     Mod+T { spawn "kitty"; }
@@ -38,7 +42,9 @@ binds {
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
 
-
+    Mod+Ctrl+V { spawn-sh "nirius toggle-follow-mode"; }
+    Mod+Ctrl+G { spawn-sh "nirius scratchpad-toggle"; }
+    Mod+Shift+G { spawn-sh "nirius scratchpad-show"; }
 
     //----------------------------  Sizing & Layout ---------------------------- 
  
@@ -94,7 +100,7 @@ binds {
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
 
-    Mod+Shift+P { power-off-monitors; }
+    //Mod+Shift+P { power-off-monitors; }
 
 
     //----------------------- Volume Brightness & Media Control-----------------------
@@ -106,10 +112,10 @@ binds {
      Mod+Shift+Down { spawn-sh "pactl set-sink-volume 0 -5%"; } 
 
    XF86MonBrightnessUp allow-when-locked=true { 
-        spawn "sh" "-c" "brightnessctl set 10%+ && notify-send -i \"none\" -h string:x-canonical-private-synchronous:brightness -h int:value:$(brightnessctl -m | awk -F, '{print $4}') \"\" \"\""; 
+        spawn "sh" "-c" "brightnessctl set 4%+ && notify-send -i \"none\" -h string:x-canonical-private-synchronous:brightness -h int:value:$(brightnessctl -m | awk -F, '{print $4}') \"\" \"\""; 
     }
     XF86MonBrightnessDown allow-when-locked=true { 
-        spawn "sh" "-c" "brightnessctl set 10%- && notify-send -i \"none\" -h string:x-canonical-private-synchronous:brightness -h int:value:$(brightnessctl -m | awk -F, '{print $4}') \"\" \"\""; 
+        spawn "sh" "-c" "brightnessctl set 4%- && notify-send -i \"none\" -h string:x-canonical-private-synchronous:brightness -h int:value:$(brightnessctl -m | awk -F, '{print $4}') \"\" \"\""; 
     }
 
     XF86AudioRaiseVolume allow-when-locked=true { 

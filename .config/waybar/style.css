@@ -38,9 +38,12 @@ window#waybar {
 
 
 }
- 
+
+
+#custom-power.balanced,
 #memory,
-#custom-powerprofiles,
+#custom-power.power-saver,
+#custom-power,
 #temperature {
 	padding: 0 5px;
         margin: 4px 2px 4px 2px;
@@ -48,6 +51,8 @@ window#waybar {
     
 }
 
+
+#custom-kdeconnect,
 #tray,
 #mpris { 
         padding: 0 5px;
@@ -95,6 +100,12 @@ tooltip {
 
 #waybar .module:hover {
     background: rgba(153, 153, 153, 0.2);   
+}
+
+/* Power module styling */
+#custom-power.performance {
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
 }
 
 

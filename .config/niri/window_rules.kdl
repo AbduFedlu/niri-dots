@@ -12,15 +12,16 @@ window-rule {
     opacity 0.98
 }
 
-
 // ---------------------------- Apps --------------------------
 
 
 window-rule {
-   
+  
+    match app-id="io.github.nokse22.high-tide"
     match app-id="spotify"
-    default-column-width { fixed 1136; }
-    default-window-height { fixed 924; }
+    match app-id="FFPWA-01KAKZFZM98Q3JG41B8VCC6PMH"
+    default-column-width { fixed 1131; }
+    default-window-height { fixed 921; }
     open-floating false
 
 }
@@ -43,7 +44,7 @@ window-rule {
     match app-id="com.ayugram.desktop"
     match app-id="com.rafaelmardojai.Blanket"
     match app-id="io.bassi.Amberol"
-    default-column-width { fixed 490; }
+    default-column-width { fixed 559; }
     open-floating false
 
 }
@@ -81,9 +82,21 @@ window-rule {
 }
 
 
+
 window-rule {
     
     match app-id=r#"imv$"#
+    open-floating true
+    default-column-width { fixed 350; }
+    default-window-height { fixed 232; }
+    default-floating-position x=120 y=10 relative-to="top-left"
+
+}
+
+
+window-rule {
+    
+    match app-id=r#"power_profile_gui.py$"#
     open-floating true
     default-floating-position x=120 y=10 relative-to="top-left"
 
@@ -105,6 +118,19 @@ window-rule {
     match title="^Picture-in-Picture$"
     open-floating true
     default-floating-position x=32 y=32 relative-to="bottom-right"
+    default-column-width { fixed 438; }
+    default-window-height { fixed 251; }
+  
+
+}
+
+window-rule {
+
+    match app-id="xpad"
+    open-floating true
+    default-floating-position x=32 y=32 relative-to="top-right"
+    default-column-width { fixed 361; }
+    default-window-height { fixed 254; }
   
 
 }
