@@ -1,118 +1,112 @@
 @import "colors.css";
 
 * {
-  font-size: 13px;
-  border-radius: 1rem;
+    font-family: "Adwaita sans", Roboto, Helvetica, Arial, sans-serif; /* Ensure you use a Nerd Font */
+    font-size: 13px;
+    border-radius: 12px;
+    border: none;
+    min-height: 0;
+    
 }
+
 window#waybar {
+  
+    background: rgba(20, 20, 25, 0.0); 
+    color: @on_primary_container;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); 
+
+}
+
+#niri-window, #disk, #window, #temperature, #clock, 
+#cpu, #memory, #custom-power, #custom-kdeconnect, 
+#tray, #mpris, #bluetooth, #battery, #network, 
+#custom-wlsunset, #workspaces, #pulseaudio {
     
-   background: rgba(20, 20, 25, 0.8);
-   color: @on_primary_container;
-
-}
-
-
-#niri-window,
-#disk,
-#window,
-#temperature,
-#temperature.critical {
-	padding: 0 10px;
-        margin: 4px 1px 4px 1px;
+    background: rgba(20, 20, 25, 0.7); /* Slightly darker, higher opacity */
+    color: @on_primary_container;
     
-}
-
-#clock
- {
-
-      padding: 0 5px;
-      margin: 4px 10px 4px 2px; 
-
-
-}
-#cpu
- {
-
-      padding: 0 5px;
-      margin: 4px 2px 4px 10px; 
-
-
-}
-
-
-#custom-power.balanced,
-#memory,
-#custom-power.power-saver,
-#custom-power,
-#temperature {
-	padding: 0 5px;
-        margin: 4px 2px 4px 2px;
-	
+    /* Spacing */
+    padding: 4px 12px;
+    margin: 6px 3px; 
     
+    /* Beauty touches */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border */
 }
 
-
-#custom-kdeconnect,
-#tray,
-#mpris { 
-        padding: 0 5px;
-        margin: 4px 4px 4px 2px;
-
-
+/* -----------------------------------------------------
+ * Hover Effects (The "Animation")
+ * ----------------------------------------------------- */
+#niri-window:hover, #disk:hover, #window:hover, #temperature:hover, 
+#clock:hover, #cpu:hover, #memory:hover, #custom-power:hover, 
+#custom-kdeconnect:hover, #tray:hover, #mpris:hover, 
+#bluetooth:hover, #battery:hover, #network:hover, 
+#custom-wlsunset:hover, #pulseaudio:hover,#custom-mpris-art {
+    
+    background: @on_primary_container; /* Uses your color variable */
+    color: rgba(20, 20, 25, 1); /* Invert text color on hover */
+    
+    /* The Animation: Expand and Glow */
+    padding: 4px 18px; /* Expands horizontally */
+    margin: 6px 0px;   /* Shrinks margin to compensate (smooth movement) */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glow effect */
 }
 
-#bluetooth,
-#battery, 
-#network,
-#custom-wlsunset {
-	padding: 0 5px;
-        margin: 4px 1px 4px 1px;
-
-
-}    
-
-
+#clock {
+    font-weight: bold;
+    background: rgba(30, 30, 40, 0.95);
+    color: #cdd6f4;
+}
 
 #custom-sep {
   font-size: 16px;
   padding: 0px 2px;
   color: #526577;
-  
 }
 
+/* -----------------------------------------------------
+ * Battery States
+ * ----------------------------------------------------- */
+#battery.charging, #battery.plugged {
+    color: #a6e3a1; /* Greenish */
+    background: rgba(166, 227, 161, 0.1);
+}
 
 #battery.critical:not(.charging) {
-    background: #f53c3c;
-    color: white;
+    background: #f38ba8; /* Red */
+    color: #11111b;
     animation-name: blink;
     animation-duration: 0.5s;
-    animation-timing-function: steps(12);
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-tooltip {
-  background: rgba(20, 20, 25, 1);
-  
+@keyframes blink {
+    to {
+        background-color: white;
+        color: #f38ba8;
+    }
 }
 
-
-
-#waybar .module:hover {
-    background: rgba(153, 153, 153, 0.2);   
-}
-
-/* Power module styling */
+/* -----------------------------------------------------
+ * Power Profiles
+ * ----------------------------------------------------- */
 #custom-power.performance {
     color: #ff6b6b;
-    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+}
+#custom-power.balanced {
+    color: #89b4fa;
 }
 
-* {
-    transition: all 0.1s cubic-bezier(.55,-0.04,.3,1.44);
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+tooltip {
+  background: rgba(20, 20, 25, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
-
-#waybar .module:hover {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+tooltip label {
+    color: white;
 }

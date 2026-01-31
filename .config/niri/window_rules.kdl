@@ -7,9 +7,7 @@ window-rule {
 }
 
 window-rule {
-    match is-active=false
-
-    opacity 0.98
+      opacity 0.95
 }
 
 // ---------------------------- Apps --------------------------
