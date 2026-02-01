@@ -73,9 +73,9 @@ window#waybar {
 
 #battery.critical:not(.charging) {
     background: #f38ba8; /* Red */
-    color: #11111b;
+    color: @on_primary_container;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 0.9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;

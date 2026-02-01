@@ -2,9 +2,9 @@
     "on-click-right": "~/.config/waybar/scripts/power_daemon_advanced.sh 5 reset",
 "layer": "top",
 "position": "top",
-"height":10,
-"margin-bottom":-5,
-"margin-top":5,
+"height": 10,
+"margin-bottom":-14,
+"margin-top":0,
 "margin-left":50,
 "margin-right": 50,
 
